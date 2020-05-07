@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to have a great display
+ASSIGNMENT TOPIC 
+You are creating a website to showcase your favourite albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+IMPORTANT:
+Start from the previous assignment
+NOTE:
+Most of the time, even the most expert of designers, need inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotity or Apple music way or some other blog out there.
+-->
+
+<html>
+
+<head>
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="hwDay9.css">
+    <style>
+        /* PREVIOUS STUFF */
+    </style>
+</head>
+
+<body>
+    <!-- EXERCISE 1
+        Use the specific bootstrap component to implement a Breadcrumb
+        -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+
+
+    <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+        -->
+    <div class="jumbotron bg-dark text-white">
+        <h1 class="display-4">My Albums</h1>
+        <p class="lead">This are the listed album containing all the music and the artist we like</p>
+
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <!-- EXERCISE 3
+            Foreach album in the favorite list, place the genre inside a badge
+        -->
+    <div class="container">
+        <div class="row my-2">
+            <div class="col">
+                <span class="badge badge-secondary">Classic Rock</span>
+            </div>
+            <div class="col">
+                <span class="badge badge-secondary">Hip-Hop</span>
+            </div>
+            <div class="col">
+                <span class="badge badge-secondary">Metal</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width:300px;">
+                    <img src="img/rock.jpg" class="card-img-top" alt="" width="300px" height="300px">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="card" style="width:300px;">
+                    <img src="img/Jcole.jpg" class="card-img-top" alt="" width="300px" height="300px">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:300px;">
+                    <img src="img/bringme.jpg" class="card-img-top" alt="" width="300px" height="300px">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col">
+                <span class="badge badge-secondary">Trap</span>
+            </div>
+            <div class="col">
+                <span class="badge badge-secondary">Jazz</span>
+            </div>
+            <div class="col">
+                <span class="badge badge-secondary">Dubstep</span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+
+                <div class="card" style="width:300px;">
+                    <img src="img/sad.jpg" class="card-img-top" alt="" width="300px" height="300px">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card" style="width:300px;">
+                    <img src="img/jazz (1).jpg" class="card-img-top" alt="" width="300px" height="300px">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card" style="width:300px;">
+                    <img src="img/dub.jpg" class="card-img-top" alt="" width="300px" height="300px">
+
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXERCISE 4
+            Foreach album in the favorite list, use the Bootstrap Card to contain it.
+            Use card layouts to format it in the best and more compatible way.
+        -->
+
+    <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+        <div class="container my-5">
+            <h1>J.Cole - 4 Your Eyez Only</h1>
+            <table class="table table-dark">
+                <thead>
+                    <tr id="head">
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Length</th>
+                        <th scope="col">
+                            <button type="button" class="btn btnHead btn-light">Delete</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="1">
+                        <th scope="row">1</th>
+                        <td>For Whom the Bell Tolls</td>
+                        <td>2:08</td>
+                        <td>
+                            <button type="button" class="btn btn1 btn-light">Delete</button>
+                        </td>
+        
+                    </tr>
+                    <tr id="2">
+                        <th scope="row">2</th>
+                        <td>Immortal</td>
+                        <td>3:20</td>
+                        <td>
+                            <button type="button" class="btn btn2 btn-light">Delete</button>
+                        </td>
+        
+                    </tr>
+                    <tr id="3">
+                        <th scope="row">3</th>
+                        <td>Deja Vu</td>
+                        <td>4:26</td>
+                        <td>
+                            <button type="button" class="btn btn3 btn-light">Delete</button>
+                        </td>
+                    </tr>
+        
+                    <tr id="4">
+                        <th scope="row">4</th>
+                        <td>Ville Mentality</td>
+                        <td>3:11</td>
+                        <td>
+                            <button type="button" class="btn btn4 btn-light">Delete</button>
+                        </td>
+                    </tr>
+        
+                    <tr id="5">
+                        <th scope="row">5</th>
+                        <td>She MIne, Pt 1</td>
+                        <td>3:32</td>
+                        <td>
+                            <button type="button" class="btn btn5 btn-light">Delete</button>
+                        </td>
+                    </tr>
+        
+                    <tr id="6">
+                        <th scope="row">6</th>
+                        <td>Change</td>
+                        <td>5:31</td>
+                        <td>
+                            <button type="button" class="btn btn6 btn-light">Delete</button>
+                        </td>
+                    </tr>
+        
+                    <tr id="7">
+                        <th scope="row">7</th>
+                        <td>Neighbors</td>
+                        <td>3:37</td>
+                        <td>
+                            <button type="button" class="btn btn7 btn-light">Delete</button>
+                        </td>
+                    </tr>
+        
+                    <tr id="8">
+                        <th scope="row">8</th>
+                        <td>Foldin Clothes</td>
+                        <td>5:17</td>
+                        <td>
+                            <button type="button" class="btn btn8 btn-light">Delete</button>
+                        </td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+
+    <!-- EXERCISE 6
+            Add a DELETE bootstrap button on each row of the tracklist.
+            Clicking on the button the row must disappear
+        -->
+
+
+
+    <!-- EXERCISE 7
+            Add a "Contact Me" form in the footer.
+            The "Contact Me" form has 2 fields:
+            - Email
+            - Text of the message
+            Use the correct Bootstrap styles for styling the buttons
+        -->
+
+    <!-- EXERCISE 8 
+            Add to the footer an extra column with the same links of the top nav.
+        -->
+
+    <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album
+        -->
+
+    <!-- EXERCISE 10
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track lenght
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+
+    <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            https://getbootstrap.com/docs/4.3/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+
+    <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+
+    <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+
+    <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+
+    <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+
+    <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
+        -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    
+    <script>
+    $(document).ready(function(){
+  $(".btnHead").click(function(){
+    $("#head").remove();
+  });
+});
+
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("#1").remove();
+  });
+});
+  
+$(document).ready(function(){
+  $(".btn2").click(function(){
+    $("#2").remove();
+  });
+});
+$(document).ready(function(){
+  $(".btn3").click(function(){
+    $("#3").remove();
+  });
+});
+  
+$(document).ready(function(){
+  $(".btn4").click(function(){
+    $("#4").remove();
+  });
+});
+  
+$(document).ready(function(){
+  $(".btn5").click(function(){
+    $("#5").remove();
+  });
+});
+  
+$(document).ready(function(){
+  $(".btn6").click(function(){
+    $("#6").remove();
+  });
+});
+$(document).ready(function(){
+  $(".btn7").click(function(){
+    $("#7").remove();
+  });
+});
+   
+$(document).ready(function(){
+  $(".btn8").click(function(){
+    $("#8").remove();
+  });
+});
+  
+    </script>
+</body>
+
+
+</html>
